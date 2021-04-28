@@ -13,5 +13,14 @@ h1 {
   width: 300px;
   padding: 20px;
   align: center;
+  margin: auto; /* found this reference at https://www.w3schools.com/csS/css_align.asp, as the align parameter was not working.*/
   color: black;
+}
+
+.interiordiv {
+  padding-left: 30px;
+}
+
+#error {
+  color: red;
 }

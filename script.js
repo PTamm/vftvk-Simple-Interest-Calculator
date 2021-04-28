@@ -32,8 +32,10 @@ function updateRate(){
 function validatePrincipal(){
     var principal = document.getElementById("principal").value;
     if (principal <= 0){
+        document.getElementById("error").innerText = "Please enter a positive number";
         return 0;
     } else {
+        document.getElementById("error").innerText = "";
         return 1;
     }
 }
