@@ -21,11 +21,11 @@ h1 {
   padding-left: 30px;
 }
 
+.key {
+  background-color: yellow;
+}
+
 #error {
   color: red;
   padding-left: 15 px;
-}
-
-#pr {
-  text-decoration: yellow;
 }

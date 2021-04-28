@@ -16,7 +16,7 @@ function compute()
 
     // display the final output
     if(validatePrincipal()==1){
-        document.getElementById("result").innerHTML = "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+"\<br\>in the year "+year+"\<br\>"
+        document.getElementById("result").innerHTML = "If you deposit \<span class='key'\>"+principal+"\</span\>,\<br\>at an interest rate of \<span class='key'\>"+rate+"%\</span\>\<br\>You will receive an amount of \<span class='key'\>"+interest+"\</span\>\<br\>in the year \<span class='key'\>"+year+"\</span\>\<br\>"
     } else {
         document.getElementById("result").innerHTML = ""
     }
