@@ -18,7 +18,7 @@ function compute()
     if(validatePrincipal()==1){
         document.getElementById("result").innerHTML = "If you deposit \<span class='key'\>"+principal+"\</span\>,\<br\>at an interest rate of \<span class='key'\>"+rate+"%\</span\>\<br\>You will receive an amount of \<span class='key'\>"+interest+"\</span\>\<br\>in the year \<span class='key'\>"+year+"\</span\>\<br\>"
     } else {
-        document.getElementById("result").innerHTML = ""
+        document.getElementById("result").innerHTML = "";
     }
 }
 
@@ -38,6 +38,7 @@ function validatePrincipal(){
     var principal = document.getElementById("principal").value;
     if (principal <= 0){
         document.getElementById("error").innerText = "Enter a positive number";
+        alert("Enter a positive number"); 
         return 0;
     } else {
         document.getElementById("error").innerText = "";
