@@ -10,6 +10,7 @@ h1 {
 .maindiv {
   background-color: white;
   border-radius: 25px;
+  width: 300px;
   padding: 20px;
   align: center;
   color: black;
