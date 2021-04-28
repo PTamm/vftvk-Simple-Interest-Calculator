@@ -17,7 +17,9 @@ function compute()
     // display the final output
     if(validatePrincipal()==1){
         document.getElementById("result").innerHTML = "If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+"\<br\>in the year "+year+"\<br\>"
-    } 
+    } else {
+        document.getElementById("result").innerHTML = ""
+    }
 }
 
 /*
@@ -34,7 +36,7 @@ function updateRate(){
 function validatePrincipal(){
     var principal = document.getElementById("principal").value;
     if (principal <= 0){
-        document.getElementById("error").innerText = "Please enter a positive number";
+        document.getElementById("error").innerText = "Enter a positive number";
         return 0;
     } else {
         document.getElementById("error").innerText = "";
