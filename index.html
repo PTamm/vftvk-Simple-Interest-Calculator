@@ -9,7 +9,7 @@
             <h1>Simple Interest Calculator</h1>
 
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate" min=1 max=20 step=0.25 value=10.50 onchange="updateRate()"><span id="rate_val">10.50%</span> <br/>
+            Interest Rate <input type="range"  id="rate" min=1 max=20 step=0.25 value=10.50 onchange="updateRate()"><span id="rate_val">10.50%</span> <br/>
             No. of Years <select  id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -24,13 +24,14 @@
             </select>  <br/>
             
 
-            <button onclick="compute()">Compute Interest</button>
+            <button onclick="compute()">Compute Interest</button><br/>
             <span id="result">
+            </span><br/>
 
-            </span><br>
+            <!-- copyright notice was not displaying, so I put it in the div -->
+            <footer>
+                &#169; Everyone Can Get Rich 
+            </footer>
         </div>
     </body>
-    <footer>
-        &#169; Everyone Can Get Rich 
-    </footer>
 </html>
