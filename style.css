@@ -1,7 +1,16 @@
 body {
-  background-color: tan;
+  background-color: black;
 }
 
 h1 {
-  color: green;
+  color: grey;
+  font-family: verdana;
+}
+
+.maindiv {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  align: center;
+  color: black;
 }
