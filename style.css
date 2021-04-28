@@ -21,6 +21,13 @@ h1 {
   padding-left: 30px;
 }
 
+/* the idea to use background-color for highlighting came from
+https://stackoverflow.com/questions/8644428/how-to-highlight-text-using-javascript
+asked by: https://stackoverflow.com/users/901798/ankit
+answered by: https://stackoverflow.com/users/1068746/guy-mograbi, and
+https://stackoverflow.com/users/28884/iain-collins
+Date: 2021-04-28
+*/
 .key {
   background-color: yellow;
 }

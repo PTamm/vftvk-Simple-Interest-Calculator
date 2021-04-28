@@ -14,7 +14,7 @@ function compute()
     // convert the year input to an actual year
     var year = new Date().getFullYear()+parseInt(years);
 
-    // display the final output
+    // display the final output, checking to see if the validation passed first
     if(validatePrincipal()==1){
         document.getElementById("result").innerHTML = "If you deposit \<span class='key'\>"+principal+"\</span\>,\<br\>at an interest rate of \<span class='key'\>"+rate+"%\</span\>\<br\>You will receive an amount of \<span class='key'\>"+interest+"\</span\>\<br\>in the year \<span class='key'\>"+year+"\</span\>\<br\>"
     } else {
@@ -31,7 +31,8 @@ function updateRate(){
 }
 
 /*
-    A function to validate the input for the principal field.
+    A function to validate the input for the principal field. Prints an error message if the check does not pass, and
+    returns either 0 or 1 depending on the outcome of the test.
 */
 function validatePrincipal(){
     var principal = document.getElementById("principal").value;
