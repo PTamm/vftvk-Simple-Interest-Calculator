@@ -25,4 +25,15 @@ function updateRate(){
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText = rateval+'%';
 }
-        
+
+/*
+    A function to validate the input for the principal field.
+*/
+function validatePrincipal(){
+    var principal = document.getElementById("principal").value;
+    if (principal <= 0){
+        return 0;
+    } else {
+        return 1;
+    }
+}
